@@ -78,20 +78,24 @@ and better generalization.
 ---
 
 ## Repository Structure
+
+```
 FaceNet-Face-Recognition/
 │
-├── model_1scratch/
-│   └── FaceNet_Trained_Model.ipynb       # Training from scratch notebook
+├── model1_scratch/
+│   └── FaceNet_Trained_Model.ipynb   # Training from scratch notebook
 │
 ├── model2_finetune/
-│   └── FaceNet_Finetuned_Model.ipynb     # Fine-tuning notebook
+│   └── FaceNet_Finetuned_Model.ipynb # Fine-tuning notebook
 │
 ├── Report/
-│   └── Final_Report.docx                 # Full project report
+│   └── Final_Report.docx             # Full project report
 │
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
+
 ---
 
 ## Key Findings
