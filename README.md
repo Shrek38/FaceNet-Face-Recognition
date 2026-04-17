@@ -78,3 +78,44 @@ and better generalization.
 ---
 
 ## Repository Structure
+FaceNet-Face-Recognition/
+│
+├── model_1scratch/
+│   └── FaceNet_Trained_Model.ipynb       # Training from scratch notebook
+│
+├── model2_finetune/
+│   └── FaceNet_Finetuned_Model.ipynb     # Fine-tuning notebook
+│
+├── Report/
+│   └── Final_Report.docx                 # Full project report
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+---
+
+## Key Findings
+
+- Fine-tuned model achieved **94.60%** accuracy vs **92.95%** for scratch model
+- Transfer learning proved effective even with a much smaller fine-tuning dataset
+- Triplet Loss with Semi-Hard Negative Mining was used for both models
+- Early stopping (patience = 3) prevented overfitting during training
+
+---
+
+## Team Members
+
+| Name | Roll Number | Contribution |
+|---|---|---|
+| Ved Arya | 24125038 | Training from scratch, LFW evaluation |
+| Keshav Yadav | 24125024 | Fine-tuning on CASIA-WebFace, performance evaluation |
+| Amogh Roop Mandal | 24125005 | Demo website, project presentation |
+
+---
+
+## References
+
+- [FaceNet: A Unified Embedding for Face Recognition and Clustering](https://arxiv.org/abs/1503.03832) — Schroff et al., 2015
+- [VGGFace2 Dataset](https://www.robots.ox.ac.uk/~vgg/data/vgg_face2/)
+- [CASIA-WebFace Dataset](https://arxiv.org/abs/1411.7923)
+- [LFW Dataset](http://vis-www.cs.umass.edu/lfw/)
