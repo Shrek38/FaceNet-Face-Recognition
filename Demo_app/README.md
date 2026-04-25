@@ -10,8 +10,7 @@ NN2 · 128-dim embeddings · Triplet Loss · VGGFace2
 facenet-demo/
 ├── backend/
 │   ├── app.py               ← Flask server (all model code inside)
-│   ├── requirements.txt
-│   └── facenet_model.pth    ← PUT YOUR WEIGHTS FILE HERE
+│   └── requirements.txt
 └── frontend/
     └── index.html           ← Open this in browser
 ```
@@ -20,17 +19,7 @@ facenet-demo/
 
 ## Setup (Step by Step)
 
-### Step 1 — Copy your weights file
-
-Copy `facenet_model.pth` into the `backend/` folder:
-
-```
-facenet-demo/
-└── backend/
-    └── facenet_model.pth   ← here
-```
-
-### Step 2 — Install Python dependencies
+### Step 1 — Install Python dependencies
 
 Open a terminal inside the `backend/` folder:
 
@@ -42,7 +31,7 @@ pip install -r requirements.txt
 > If you already have PyTorch installed, you can skip torch/torchvision from requirements.txt
 > and just run:  pip install flask flask-cors Pillow
 
-### Step 3 — Start the backend
+### Step 2 — Start the backend
 
 ```bash
 cd backend
@@ -56,7 +45,7 @@ You should see:
  * Running on http://0.0.0.0:5000
 ```
 
-### Step 4 — Open the frontend
+### Step 3 — Open the frontend
 
 Simply open `frontend/index.html` in your browser.
 No server needed for the frontend — it's a plain HTML file.
@@ -71,7 +60,7 @@ No server needed for the frontend — it's a plain HTML file.
 1. **Upload or Webcam** — Click "Upload" to select an image from your device,
    or "Webcam" to capture a live photo from your camera.
 2. Do the same for Face 2.
-3. Adjust the **Threshold** slider if needed (default: 1.242 from training).
+3. Adjust the **Threshold** slider if needed (default: 0.900 from training).
 4. Click **Compare Faces**.
 5. See the verdict, L2 distance, similarity %, and bar chart.
 
